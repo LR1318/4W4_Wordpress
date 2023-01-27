@@ -17,10 +17,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body{
-    background-color: beige;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(237, 222, 163);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 h1,
 h2{
     text-align: center;
+    margin: 5% 0% 3% 0%;
 }

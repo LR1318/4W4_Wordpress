@@ -11,11 +11,17 @@
         if(have_posts()): 
             while (have_posts()) : the_post();
                 the_title('<h1>','</h1>');
-                the_content('<h2>','</h2>');
+                ?><h2>
+                <?php
+                the_content();
+                ?>
+                </h2>
+                <hr>
+                <?php   
             endwhile;
-        endif;
-    
-    ?>
-    
+            endif;
+            
+            ?>
+            
 </main>
 <?php get_footer(); ?>
