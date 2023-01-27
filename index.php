@@ -5,5 +5,17 @@
  */
 ?>
 <?php get_header(); ?>
-<h1>bienvenu au cour 4w4</h1>
+<main>
+    <?php
+    
+        if(have_posts()): 
+            while (have_posts()) : the_post();
+                the_title('<h1>','</h1>');
+                the_content('<h2>','</h2>');
+            endwhile;
+        endif;
+    
+    ?>
+    
+</main>
 <?php get_footer(); ?>
