@@ -1,0 +1,21 @@
+# resumé des commandes git et github
+## création d'un dépot local 
+-Dans visual code sélectionner le dossier du thème et open in integrated terminal
+-git init (éxecuter une seul fois cette commande permet de créer le dossier caché .git)
+-git status
+-git add . ou git add --all (indexation)
+-git commit -m "s2c1 on décrit les modification" (dépot)
+-git log (permet d'avoir une liste des commit)
+-git log --oneline 
+-git remote add 4w4 https://github.com/LR1318/4W4_Wordpress.git
+-git branch -m main (on nomme la branche principal 'master' pour 'main')
+-git branch lab1 (permet de créer la branche lab1)
+-git checkout lab1 (pour changer de branche)
+-git log --oneline (les branches lab1 et main pointe vers le même commit)
+-git checkout main (pour retourner a la branche main)
+-git push 4w4 main (pour push la branche active main vers GitHub dans le dépot 4w4 vers la branche main)
+-git checkout lab1 (acceder à la branche lab1 )
+-git push 4w4 lab1 (pour push la branche active lab1 vers GitHub dans le dépot 4w4 vers la branche lab1)
+-git branch lab2 (crée une branche identique à lab1)
+-git checkout lab2 (pour pouvoir faire un checkout lab2 il faut ABSOLUMENT un commit au lab1)
+-git push 4w4 lab2 (pour push la branche active vers 4w4 dans la branche lab2)
