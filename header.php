@@ -8,5 +8,9 @@
 </head>
 <body>
     <header>
-        <h1>4W4-Création d'interface et développement Web</h1>
+        <h3>-<?php  echo bloginfo('name') ?></h3>
+        <h3>-<?php  echo bloginfo('description') ?></h3>
+        <h3>-<?php  echo bloginfo('url') ?></h3>
+        <h1><a href="<?php  echo bloginfo('url') ?>"><?php  echo bloginfo('name') ?></a></h1>
+        <h2><?php  echo bloginfo('description') ?></h2>
     </header>
