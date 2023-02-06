@@ -9,7 +9,8 @@
 <body>
     <header>
         <?php  wp_nav_menu(array(
-            "menu" => "entete"
+            "menu" => "entete",
+            "container" => "nav"
         )) ?>
         <h1><a href="<?php  echo bloginfo('url') ?>"><?php  echo bloginfo('name') ?></a></h1>
         <h2><?php  echo bloginfo('description') ?></h2>
