@@ -321,6 +321,11 @@ template {
 }
 
 /* --------------------------------------------- base */
+/*
+css font-size clamp generator
+
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+*/
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
 }
@@ -379,6 +384,14 @@ a:hover {
   color: red;
 }
 
+body {
+  background-color: rgba(44, 44, 44, 0.516);
+}
+
+main {
+  text-align: center;
+}
+
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -394,6 +407,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 .menu-entete-container .menu {
