@@ -1,13 +1,14 @@
-# Laboratoir 1
+# Exercice #1
 ## 4w4 - Conception d'interface et développement Web
-### Auteur : Luca Ruggeri
-#### Description 
-- Instalation local de Wordpress
-- Création d'un thême simple
-- Création d'un dépot Git local
--Création d'un dépot GitHub (distant)
+### Auteur: Eddy Martin
+#### Description
+- Installation sur un serveur distant « siteground.com »
+- Développer les modules suivants:
+> header.php, front-page.php
+- Création de la branche exer1 
+- Compléter la codification sass
+- Améliorer le design global
 
 #### Références
 - https://eddytuto.ca/
 - https://developer.wordpress.org/themes/
-- https://git-scm.com/docs/git-remote.html

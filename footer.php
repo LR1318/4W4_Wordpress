@@ -1,4 +1,3 @@
-
 <footer class="site__footer">
     <section>Colonne 1</section>
     <section>Colonne 2</section>

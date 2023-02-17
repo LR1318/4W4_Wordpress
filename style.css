@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
-Theme Name: 2023-4w4_luca_ruggeri
+Theme Name: 2023 4w4 Eddy Martin
 Theme URI: https://referenced.ca
-Author: Eddy Martin et Luca Ruggeri
-Author URI: https://github.com/LR1318/4W4_Wordpress
-Description:U thème de base qui nous permettra d'apprendre les rudiments de la création de thème
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
+Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -322,12 +322,13 @@ template {
 
 /* --------------------------------------------- base */
 /*
-css font-size clamp generator
+css font-size clamp generator *
 
-https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
+
 */
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
 
 h2 {
@@ -371,25 +372,20 @@ h6 {
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  /*
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
-  color: rgb(74, 74, 74);
+  color: rgb(76, 88, 135);
 }
 a:visited {
-  color: blue;
+  color: rgb(76, 135, 104);
 }
 a:hover {
-  color: red;
-}
-
-body {
-  background-color: rgba(44, 44, 44, 0.516);
-}
-
-main {
-  text-align: center;
+  color: rgb(211, 28, 28);
 }
 
 /* --------------------------------------------- composant */
@@ -398,6 +394,7 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .site__footer section {
   border: 1px solid #aaa;
   flex: 1 1 200px;
@@ -407,18 +404,29 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
 }
 
+/* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item {
-  color: purple;
+  color: rgb(0, 42, 85);
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
-  padding: 5px 5px;
+  padding: 5px 20px;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 200px;
+  border: 1px solid #aaa;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
