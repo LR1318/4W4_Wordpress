@@ -1,8 +1,8 @@
 /*
-Theme Name: 2023 4w4 Eddy Martin
+Theme Name: 2023 4w4 Luca Ruggeri
 Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
+Author: Luca Ruggeri
+Author URI: https://github.com/
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -21,12 +21,14 @@ Text Domain: 2023-4w4
 @import "variables/root";
 
 /* --------------------------------------------- base */
+@import "base/link";
 @import "base/heading";
 // @import "base/espacement";
-@import "base/link";
 // @import "base/list";
+@import "base/body";
+@import "base/markdown";
 
 /* --------------------------------------------- composant */
+@import "composant/bloc_flex";
 @import "composant/pied_page";
 @import "composant/site_entete";
-@import "composant/bloc_flex";

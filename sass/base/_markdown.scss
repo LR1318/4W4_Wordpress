@@ -7,10 +7,16 @@ ul > li,
 ol > li{
 
 }
+ul{list-style-type: none;}
 
 ul>li {}
 
 ol>li{}
+
+li::before{
+    content: "";
+    margin-inline-end: 1ch;
+}
 
 /* ----------------------------  pre */
 

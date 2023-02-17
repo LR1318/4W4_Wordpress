@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: 2023 4w4 Eddy Martin
+Theme Name: 2023 4w4 Luca Ruggeri
 Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
+Author: Luca Ruggeri
+Author URI: https://github.com/
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -321,6 +321,16 @@ template {
 }
 
 /* --------------------------------------------- base */
+a {
+  color: rgb(143, 142, 142);
+}
+a:visited {
+  color: rgb(112, 74, 119);
+}
+a:hover {
+  color: rgb(211, 28, 28);
+}
+
 /*
 css font-size clamp generator *
 
@@ -355,15 +365,6 @@ P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
 }
 
-h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /* font-family: "Slackey", cursive; */
-}
-
 h3,
 h4,
 h5,
@@ -375,20 +376,38 @@ p {
   /*
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;*/
-  font-family: "Times New Roman", Times, serif;
 }
 
-a {
-  color: rgb(76, 88, 135);
-}
-a:visited {
-  color: rgb(76, 135, 104);
-}
-a:hover {
-  color: rgb(211, 28, 28);
+body {
+  background-color: rgb(223, 223, 223);
+  font-family: "Rubik", sans-serif;
 }
 
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
+/* Liste */
+ul {
+  list-style-type: none;
+}
+
+li::before {
+  content: "";
+  margin-inline-end: 1ch;
+}
+
+/* ----------------------------  pre */
 /* --------------------------------------------- composant */
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blocflex article {
+  border: 1px solid #3a3a3a;
+  box-shadow: 10px 10px 25px;
+  padding: 1rem;
+}
+
 .site__footer {
   display: flex;
   justify-content: space-between;
@@ -401,9 +420,14 @@ a:hover {
 }
 
 .site__header__logo {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#site__header__titre {
+  text-align: center;
 }
 
 /* -------------------------------------------------- menu-enetete */
@@ -413,20 +437,9 @@ a:hover {
   justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item {
-  color: rgb(0, 42, 85);
+  color: rgb(243, 243, 243);
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
-}
-
-.blocflex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.blocflex article {
-  flex: 1 0 200px;
-  border: 1px solid #aaa;
-  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
