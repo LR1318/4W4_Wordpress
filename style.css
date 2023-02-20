@@ -419,6 +419,11 @@ li::before {
   flex: 1 1 200px;
 }
 
+#menu__bas_de_page {
+  display: flex;
+  flex-direction: column;
+}
+
 .site__header__logo {
   background-color: black;
   display: flex;
@@ -430,11 +435,17 @@ li::before {
   text-align: center;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(243, 243, 243);

@@ -13,11 +13,14 @@
 <body>
    <header class="site__header">
     <section class="site__header__logo">
+        <div class="logomenu">
         <?php the_custom_logo(); ?>
         <?php wp_nav_menu(array(
         "menu" => "entete",
         "container" => "nav"
         )) ?>
+        </div>
+        <?php  get_search_form() ?>
     </section>
     <section id="site__header__titre">
 
