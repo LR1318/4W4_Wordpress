@@ -379,7 +379,7 @@ p {
 }
 
 body {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(164, 164, 164);
   font-family: "Rubik", sans-serif;
 }
 
@@ -406,6 +406,7 @@ li::before {
   border: 1px solid #3a3a3a;
   box-shadow: 10px 10px 25px;
   padding: 1rem;
+  border-radius: 15px;
 }
 
 .site__footer {
@@ -427,8 +428,9 @@ li::before {
 .site__header__logo {
   background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  box-shadow: 0px 0px 30px 15px gray;
 }
 
 #site__header__titre {
@@ -437,15 +439,17 @@ li::before {
 
 .logomenu {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
 /* -------------------------------------------------- menu-enetete */
+.menu-entete-container {
+  display: flex;
+  justify-content: space-around;
+}
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: flex-start;
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(243, 243, 243);
@@ -453,4 +457,17 @@ li::before {
 .menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+}
+
+form {
+  display: flex;
+  background-color: transparent;
+}
+form .recherche__input {
+  border-radius: 25px;
+}
+form .recherche__bouton {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

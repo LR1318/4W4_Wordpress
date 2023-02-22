@@ -1,13 +1,14 @@
 .site__header {
-
-
+    
+    
 }
 
 .site__header__logo {
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    box-shadow: 0px 0px 30px 15px gray ;
 }
 #site__header__titre{
     text-align: center;
@@ -15,17 +16,19 @@
 }
 .logomenu{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container { // nav
 
+display: flex;
+justify-content: space-around;
+
     .menu{ // ul
         display : flex;
         list-style-type: none;
-        justify-content: flex-start;
+
         .menu-item { //li
             color : rgb(243, 243, 243);
             a {

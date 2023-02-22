@@ -15,10 +15,12 @@
     <section class="site__header__logo">
         <div class="logomenu">
         <?php the_custom_logo(); ?>
-        <?php wp_nav_menu(array(
-        "menu" => "entete",
-        "container" => "nav"
-        )) ?>
+        </div>
+        <div class="site__entete">
+            <?php wp_nav_menu(array(
+                "menu" => "entete",
+                "container" => "nav"
+                )) ?>
         </div>
         <?php  get_search_form() ?>
     </section>
