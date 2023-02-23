@@ -11,7 +11,7 @@
     <?php
         if (have_posts()): 
             while (have_posts()) : the_post(); ?>
-            <article>
+            <article class="enfant_machin" id="test">
                 <h3>
                     <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
                 </h3>
