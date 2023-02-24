@@ -3,7 +3,9 @@
 /* Liste */
 ul,ol{}
 
-
+li{
+    margin: 0rem 2rem;
+}
 ul{
     list-style: none;
 }
@@ -12,14 +14,12 @@ ul{
 ul>li>ul{
     list-style-type: square;
 }
-li::before{
 
-}
 
 /* ----------------------------  pre */
 
 pre {
-    margin-left: 2rem;
+    margin: 2rem;
 }
 
 code {
@@ -27,15 +27,21 @@ code {
     display: flex;
     height: 30vh;
     overflow-y: scroll;
+    padding-left: 2rem;
+
 }
 
-{}
 
-blockquote {}
+
+blockquote {
+    color: rgb(57, 57, 57);
+}
 
 hr {}
 
-strong,b,i,em {}
+strong,b,i,em {
+    font-size: 1.3rem;
+}
 
 
 
