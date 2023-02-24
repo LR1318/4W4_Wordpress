@@ -7,12 +7,15 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4Iiwi
 
 h1 {
     font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
+    text-align: center;
   }
   h2 {
     font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+    text-align: center;
   }
   h3 {
     font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+    margin-left: 2rem;
   }
   h4 {
     font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
@@ -26,13 +29,11 @@ h1 {
   
   P {
     font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+    margin-left: 2rem;
+
   }
   
-  h1 {
-  }
-  
-  h2 {
-  }
+
   
   h3,
   h4,
