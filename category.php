@@ -17,10 +17,8 @@
       $query = new WP_Query( $args );
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
-            <article class="enfant_machin">
-               <h4><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h4>
-               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-            </article>
+         <!-- slug peut avoir les valeurs qui se trouve dans les catégories wordpress -->
+            <?php get_template_part('templates-parts/categorie', $category->slug);  ?>
          <?php endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>

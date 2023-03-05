@@ -10,8 +10,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
-   <header class="site__header">
+<body class="site">
+   <header class="site__entete">
     <section class="site__header__logo">
         <div class="logomenu">
         <?php the_custom_logo(); ?>
@@ -30,3 +30,10 @@
         <h2><?= bloginfo('description') ?></h2>
     </section>
    </header>
+<aside class="site__aside">
+    <h3>Menu secondaire</h3>
+    <?php wp_nav_menu(array(
+        "menu" => "aside",
+        "container" => "nav"  
+    )); ?>
+</aside>

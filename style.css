@@ -340,11 +340,13 @@ https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4Iiwi
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
   text-align: center;
+  color: white;
 }
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
   text-align: center;
+  color: white;
 }
 
 h3 {
@@ -385,6 +387,7 @@ p {
 body {
   background-color: rgb(164, 164, 164);
   font-family: "Rubik", sans-serif;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
 }
 
 /* Les balise qu'on utilse dans la conversion des fichiers markdown */
@@ -424,32 +427,31 @@ strong, b, i, em {
 
 /* --------------------------------------------- composant */
 main {
-  background-color: rgb(221, 221, 221);
   box-shadow: 0px 5px 15px;
   padding-bottom: 15px;
 }
 
 .blocflex {
-  display: flex;
-  overflow-x: scroll;
-  padding: 24px;
-  width: 70%;
-  height: 50vh;
-  scroll-padding: 24px;
-  gap: 12px;
-  margin: 2rem auto;
-  border: 2px solid black;
-  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
 }
-.blocflex .enfant_machin {
-  flex: 0 0 40%;
-  padding: 2rem 2rem 4rem 2rem;
-  font-size: 0.7rem;
-  box-sizing: border-box;
-  border-radius: 8px;
-  scroll-snap-align: start;
-  box-shadow: 5px 5px 10px;
-  scrollbar-color: red;
+
+article {
+  border: 1px solid #070707;
+  box-shadow: 10px 10px 25px;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #a7a7a7;
+}
+article .blocflex__article {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
+.blocflex__galerie {
+  flex: 1 0 100%;
 }
 
 .site__footer {
@@ -502,18 +504,36 @@ main {
   padding: 5px 20px;
 }
 
-form {
+.recherche__input {
   display: flex;
-  background-color: transparent;
+  position: relative;
+  width: 2.3rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid white;
+  overflow: hidden;
+  background-color: black;
+  background-image: url(./images/loupe_blanche-64x64.ico);
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 45% 50%;
+  transition: 550ms;
 }
-form .recherche__input {
-  border-radius: 25px;
+.recherche__input:hover {
+  border: 1px solid #61005a;
+  cursor: pointer;
 }
-form .recherche__bouton {
-  font-size: 1.5rem;
-  background-color: transparent;
+.recherche__input:focus {
+  width: 10rem;
   color: white;
+  background-color: transparent;
+  border: 1px solid #61005a;
+  border-radius: 0%;
+  background: none;
+  cursor: text;
 }
+
 .chaque_recherche {
   display: grid;
   gap: 2rem;
@@ -529,4 +549,41 @@ form .recherche__bouton {
 }
 .chaque_recherche .contenu_recherche {
   font-size: 1.5rem;
+}
+
+/*------------------------------------------layout */
+.site__entete {
+  grid-area: header;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.site__aside {
+  grid-area: aside;
+  border: 5px 15px solid black;
+  background-color: rgb(97, 97, 97);
+}
+.site__aside li {
+  margin-bottom: 2rem;
+  list-style-type: square;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+  row-gap: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

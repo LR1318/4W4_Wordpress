@@ -1,15 +1,48 @@
-form{
+.recherche__input{
     display: flex;
-    background-color: transparent;
-    .recherche__input{
-        border-radius: 25px;
-    }
-    .recherche__bouton{
-        font-size: 1.5rem;
-        background-color: transparent;
-        color: white;
-    }
-    .recherche__icone{
+    // background-color: transparent;
+    // .recherche__input{
+    //     border-radius: 25px;
+    // }
+    // .recherche__bouton{
+    //     font-size: 1.5rem;
+    //     background-color: transparent;
+    //     color: white;
+    // }
+    // .recherche__icone{
         
+    // }
+    position: relative;
+    width: 2.3rem;
+    height: 2rem;
+    border-radius:50% ;
+    padding: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    background-color: black;
+    background-image: url(./images/loupe_blanche-64x64.ico);
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 45% 50%;
+    transition: 550ms;    
+    
+    &:hover{
+        border: 1px solid #61005a;
+        cursor: pointer;
+    }    
+    &:focus{
+        width: 10rem;
+        color: white;
+        background-color: transparent;
+        border: 1px solid #61005a;
+        border-radius:0% ;
+        background: none;
+        cursor: text;
+
+
+        
+
     }
+    
 }
+
