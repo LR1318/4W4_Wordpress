@@ -378,6 +378,12 @@ h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+a:hover {
+  background-color: grey;
+  color: black;
+  text-decoration: none;
+}
+
 p {
   /*
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -444,6 +450,9 @@ article {
   padding: 1rem;
   border-radius: 15px;
   background-color: #a7a7a7;
+}
+article:hover {
+  box-shadow: 10px 10px 2px;
 }
 article .blocflex__article {
   border: 1px solid #aaa;
