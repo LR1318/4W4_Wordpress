@@ -1,3 +1,5 @@
+
+
 .chaque_recherche{
     display: grid;
     // Cette déclaration sera meilleur quand min() sera mieux supporté
@@ -8,6 +10,7 @@
     box-shadow: 10px 10px 25px;
     padding: 1rem;
     border-radius: 15px;
+    background-color: #a7a7a7;
 
     .titre_recherche{
         display: flex;

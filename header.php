@@ -10,7 +10,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site">
+<body class="site <?= (is_front_page()?'no-aside':'') ?> ">
    <header class="site__entete">
     <section class="site__header__logo">
         <div class="logomenu">
@@ -30,10 +30,9 @@
         <h2><?= bloginfo('description') ?></h2>
     </section>
    </header>
-<aside class="site__aside">
-    <h3>Menu secondaire</h3>
-    <?php wp_nav_menu(array(
-        "menu" => "aside",
-        "container" => "nav"  
-    )); ?>
-</aside>
+    <?php
+    
+        get_template_part("templates-parts/aside");
+    
+    ?>
+    

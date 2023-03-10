@@ -352,6 +352,8 @@ h2 {
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
   margin-left: 2rem;
+  color: whitesmoke;
+  text-align: center;
 }
 
 h4 {
@@ -479,8 +481,12 @@ article .blocflex__article {
   flex-direction: column;
 }
 
+.custom_logo-link {
+  mix-blend-mode: color;
+}
+
 .site__header__logo {
-  background-color: black;
+  background-color: rgb(23, 23, 23);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -551,6 +557,7 @@ article .blocflex__article {
   box-shadow: 10px 10px 25px;
   padding: 1rem;
   border-radius: 15px;
+  background-color: #a7a7a7;
 }
 .chaque_recherche .titre_recherche {
   display: flex;
