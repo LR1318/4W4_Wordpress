@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 <main>
 <h3>search.php</h3>
-<h3>Resultat de la recherche</h3>
+<h3 id="titre_page_recherche">Resultat de la recherche</h3>
 <?php
     if (have_posts()): 
         while (have_posts()) : the_post();?>

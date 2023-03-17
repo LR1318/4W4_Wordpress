@@ -10,29 +10,68 @@
     <?php wp_head(); ?>
 </head>
 
+<?php
+// $nouvelle_classe = "";
+// if (is_front_page()){
+//     $nouvelle_classe = "no-aside";
+// }
+    
+
+?>
+
+
+
+
 <body class="site <?= (is_front_page()?'no-aside':'') ?> ">
    <header class="site__entete">
-    <section class="site__header__logo">
-        <div class="logomenu">
-        <?php the_custom_logo(); ?>
-        </div>
-        <div class="site__entete">
+       <section class="menu_recherche">
+           <div class="logomenu">
+               <?php the_custom_logo(); ?>
+            </div>
+        <!-- <input type="checkbox" id="chkMenu"> -->
+        <div class="site__entete_suite">
             <?php wp_nav_menu(array(
                 "menu" => "entete",
                 "container" => "nav"
                 )) ?>
-        </div>
         <?php  get_search_form() ?>
-    </section>
-    <section id="site__header__titre">
+        <!-- <label class="burger" for="chkMenu">
+            <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="50" height="50"></label> -->
+            <nav>
+    </div>
+</section>
+<div class="navbar">
+  <div class="container nav-container">
+  <input class="checkbox" type="checkbox" name="burger_menu" id="burger" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>  
+    
+    <div class="menu-items">
+        <?php
+      
+      get_template_part("templates-parts/aside");
+      
+      ?>
+      
+    </div>
+  </div>
+</div>
+</nav>
+<section id="site__header__titre">
 
         <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
         <h2><?= bloginfo('description') ?></h2>
     </section>
    </header>
-    <?php
+   <div class="template__aside">
+
+       <?php
     
-        get_template_part("templates-parts/aside");
+    get_template_part("templates-parts/aside");
     
     ?>
+    </div>
     

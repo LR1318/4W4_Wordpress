@@ -17,6 +17,7 @@
   border: 5px 15px solid black;
   background-color: rgb(97, 97, 97);
 
+
     li{
       margin-bottom: 2rem;
       list-style-type: square;
@@ -25,6 +26,7 @@
   }
 
 .site {
+    width: 100vw;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas:
@@ -33,6 +35,7 @@
       "main"
       "footer";
     row-gap: 50px;
+
   
     @media screen and (min-width: 1000px) {
       grid-template-columns: 20% auto;
@@ -40,5 +43,18 @@
         "header header"
         "aside main"
         "footer footer";
+    }
+    .no-aside {
+      grid-template-areas:
+      "header"
+      "main"
+      "footer";
+      @media screen and (min-width: $largeur__bureau) {
+        grid-template-columns: auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      }
     }
   }

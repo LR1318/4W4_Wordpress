@@ -7,6 +7,26 @@
 <?php get_header(); ?>
 <main class="site__main">
     
+    <section class="section__galerie">
+        
+
+
+
+        <!-- <section class="enfant_machin"> -->
+            
+            <?php   
+        $la_categorie = "4w4";
+        if(in_category('galerie')) {
+                $la_categorie= "galerie";
+            }
+            
+            get_template_part('templates-parts/categorie', $la_categorie);
+
+            
+            
+            ?>
+        </section>
+    
     <section class="blocflex">
     <?php
         if (have_posts()): 
@@ -16,9 +36,7 @@
 
                 <?php   
             $la_categorie = "4w4";
-            if(in_category('galerie')) {
-                $la_categorie= "galerie";
-            }
+            
             
             get_template_part('templates-parts/categorie', $la_categorie);
             

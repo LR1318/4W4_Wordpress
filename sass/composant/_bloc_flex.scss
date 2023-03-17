@@ -14,6 +14,16 @@ main{
   padding-bottom: 15px;
 
 }
+.page__single{
+  
+
+    border: 1px solid #070707;
+    box-shadow: 10px 10px 25px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #a7a7a7;
+  
+}
 
 
 .blocflex {
@@ -38,13 +48,25 @@ article {
 
     border: 1px solid #aaa;
     padding: 1rem;
+    flex: 1 0 300%;
 
   }
 
 
 }
 .blocflex__galerie{
-  flex: 1 0 100%;
+  display: flex;
+
+  align-items: center;
+ margin: 2rem;
+  
+}
+
+
+.template__aside{
+  @media screen and (max-width: $largeur__bureau) {
+    display: none;
+}
 }
 
 

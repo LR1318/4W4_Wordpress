@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+align-items: center;
+margin-left: 3rem;
 
 }
 
 .site__footer section {
-    border : 1px solid #aaa;
     flex : 1 1  200px;
 }
 #menu__bas_de_page{

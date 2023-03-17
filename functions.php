@@ -26,7 +26,9 @@ function personnalisation_menu_item_title($title, $item, $args, $depth) {
     // Remplacer 'cours' par l'identifiant de votre menu
     if($args->menu == 'cours') {
 // Modifier la longueur du titre en fonction de vos besoins
-$title = wp_trim_words($title, 3, ' ... ');//on garde uniquement 3 mots
+$sigle = substr($title,0,7);
+$title = substr($title,7);
+$title ="<div class='sigle__cours'>".$sigle."</div>". "<p class='aside__texte'>" . wp_trim_words($title, 3, ' ... ') . "/<p>";//on garde uniquement 3 mots
 }
 return $title;
 }
