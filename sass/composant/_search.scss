@@ -1,7 +1,7 @@
 
 
 .chaque_recherche{
-
+display:  grid;
     // Cette déclaration sera meilleur quand min() sera mieux supporté
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
@@ -10,25 +10,32 @@
     box-shadow: 10px 10px 25px;
     padding: 1rem;
     border-radius: 15px;
-    background-color: #a7a7a7;
 
-    .titre_recherche{
-        display: flex;
-        justify-content: center;
-        
-        
-    }
+
     .contenu_recherche{
         font-size: 1.5rem;
+        background-color: #a7a7a7;
+        border-radius: 5px;
+        padding: 1rem;
+
     }
     h4{
+        width: 100%;
         font-size: 1.5rem;
+        text-align: center;
+        background-color: #c8c7c7;
+        border-radius: 5px;
+
     }
     .info-cours{
         display: flex;
+       p{
+        font-size: 1.5rem;
+       }
     }
 
     @media screen and (min-width: $largeur__bureau) {
         display: flex;
+        margin-right: 0;
       }
 }

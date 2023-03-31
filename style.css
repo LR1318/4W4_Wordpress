@@ -595,30 +595,37 @@ article .blocflex__article {
 }
 
 .chaque_recherche {
+  display: grid;
   gap: 2rem;
   margin: 2rem;
   border: 1px solid #3a3a3a;
   box-shadow: 10px 10px 25px;
   padding: 1rem;
   border-radius: 15px;
-  background-color: #a7a7a7;
-}
-.chaque_recherche .titre_recherche {
-  display: flex;
-  justify-content: center;
 }
 .chaque_recherche .contenu_recherche {
   font-size: 1.5rem;
+  background-color: #a7a7a7;
+  border-radius: 5px;
+  padding: 1rem;
 }
 .chaque_recherche h4 {
+  width: 100%;
   font-size: 1.5rem;
+  text-align: center;
+  background-color: #c8c7c7;
+  border-radius: 5px;
 }
 .chaque_recherche .info-cours {
   display: flex;
 }
+.chaque_recherche .info-cours p {
+  font-size: 1.5rem;
+}
 @media screen and (min-width: 1000px) {
   .chaque_recherche {
     display: flex;
+    margin-right: 0;
   }
 }
 
