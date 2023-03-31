@@ -1,7 +1,7 @@
 
 
 .chaque_recherche{
-    display: grid;
+
     // Cette déclaration sera meilleur quand min() sera mieux supporté
     // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     gap: 2rem;
@@ -16,8 +16,19 @@
         display: flex;
         justify-content: center;
         
+        
     }
     .contenu_recherche{
         font-size: 1.5rem;
     }
+    h4{
+        font-size: 1.5rem;
+    }
+    .info-cours{
+        display: flex;
+    }
+
+    @media screen and (min-width: $largeur__bureau) {
+        display: flex;
+      }
 }

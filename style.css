@@ -595,7 +595,6 @@ article .blocflex__article {
 }
 
 .chaque_recherche {
-  display: grid;
   gap: 2rem;
   margin: 2rem;
   border: 1px solid #3a3a3a;
@@ -610,6 +609,17 @@ article .blocflex__article {
 }
 .chaque_recherche .contenu_recherche {
   font-size: 1.5rem;
+}
+.chaque_recherche h4 {
+  font-size: 1.5rem;
+}
+.chaque_recherche .info-cours {
+  display: flex;
+}
+@media screen and (min-width: 1000px) {
+  .chaque_recherche {
+    display: flex;
+  }
 }
 
 .menu-cours-container .menu {
