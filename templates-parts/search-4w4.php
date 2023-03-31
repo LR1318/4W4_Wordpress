@@ -9,6 +9,8 @@
             echo wp_trim_words(get_the_excerpt(), 50, "[...]");
             
             ?>
+        <p><?php the_field('enseignant'); ?></p>
+        <p><?php the_field('domaine'); ?></p>
             </div>
         </section>
             <hr>
