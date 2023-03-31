@@ -40,16 +40,18 @@
             <nav>
     </div>
 </section>
+
 <div class="navbar">
   <div class="container nav-container">
-  <input class="checkbox" type="checkbox" name="burger_menu" id="burger" />
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div>  
+    <input class="checkbox" type="checkbox" name="burger_menu" id="burger" />
+    <div class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>  
     
-    <div class="menu-items">
+
+      <div class="menu-items">
         <?php
       
       get_template_part("templates-parts/aside");
@@ -61,17 +63,19 @@
 </div>
 </nav>
 <section id="site__header__titre">
-
-        <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-        <h2><?= bloginfo('description') ?></h2>
-    </section>
-   </header>
-   <div class="template__aside">
-
-       <?php
+  
+  <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+  <h2><?= bloginfo('description') ?></h2>
+</section>
+</header>
+<div class="<?= (is_search()?'no-nav':'') ?> template__aside">
+  
+  <?php
     
     get_template_part("templates-parts/aside");
     
     ?>
     </div>
+
+    
     

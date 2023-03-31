@@ -58,3 +58,11 @@
       }
     }
   }
+
+  .no-nav{
+    display: none;
+    background-color: red;
+  }
+  .no-nav+main{
+    width: 90vw;
+  }
