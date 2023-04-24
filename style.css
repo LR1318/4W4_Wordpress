@@ -496,10 +496,16 @@ article .blocflex__article {
   flex-direction: column-reverse;
 }
 .site__footer .colonne1 {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(154, 154, 154, 0.496);
+}
+.site__footer .colonne1 .logomenu {
+  display: flex;
+  justify-content: center;
 }
 
 #menu__bas_de_page {
