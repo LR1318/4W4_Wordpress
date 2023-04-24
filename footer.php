@@ -1,4 +1,7 @@
 <footer class="site__footer">
+    <section>
+        
+    </section>
     <section><div class="logomenu">
                <?php the_custom_logo(); ?>
             </div>
