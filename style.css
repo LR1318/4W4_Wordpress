@@ -487,15 +487,19 @@ article .blocflex__article {
 }
 
 .site__footer {
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   margin-left: 3rem;
+  flex-direction: column-reverse;
 }
-
-.site__footer section {
-  flex: 1 1 200px;
+.site__footer .colonne1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 #menu__bas_de_page {
@@ -778,10 +782,6 @@ article .blocflex__article {
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-}
-
-.site__footer {
-  grid-area: footer;
 }
 
 .site__aside {
