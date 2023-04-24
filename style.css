@@ -507,6 +507,19 @@ article .blocflex__article {
   display: flex;
   justify-content: center;
 }
+.site__footer .colonne2 section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.site__footer .colonne2 section .widget3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
 
 #menu__bas_de_page {
   display: flex;

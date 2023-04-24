@@ -21,7 +21,26 @@ flex-direction: column-reverse;
         justify-content: center;
     }
 }
+.colonne2 {
 
+    section{
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+        
+        
+        .widget3{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            background-color: black;
+            color: white;
+        }
+    }
+    
+}
 }
 
 

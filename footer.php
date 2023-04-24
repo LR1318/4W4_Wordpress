@@ -18,6 +18,9 @@
                 <div class="footer">
                     <?php dynamic_sidebar( 'footer' ); ?>
                 </div>
+                <div class="widget3">
+            <?php dynamic_sidebar( 'widget3' ); ?>
+        </div>
             </section>
         </section>
 </footer>

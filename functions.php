@@ -83,5 +83,14 @@ function enregistrer_sidebar() {
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>',
     ) );
+    register_sidebar( array(
+        'name' => __( 'widget3', '4w4_Luca_Ruggeri' ),
+        'id' => 'widget3',
+        'description' => __( 'Un widget area pour afficher des widgets', '4w4_Luca_Ruggeri' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
