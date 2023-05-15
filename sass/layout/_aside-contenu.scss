@@ -1,19 +1,23 @@
 
 .site__entete {
     grid-area: header;
-  }
+}
   
   .site__main {
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 
+
     p{
       color: whitesmoke;
     }
   }
-  
+  .blocflex__menu{
 
+    grid-area: evenement;
 
+  }
+ 
 .site__aside {
     grid-area: aside;
   border: 5px 15px solid black;
@@ -35,16 +39,17 @@
       "header"
       "aside"
       "main"
+      "evenement"
       "footer";
 
 
   
     @media screen and (min-width: 1000px) {
-      grid-template-columns: 20% auto;
+      grid-template-columns: 30% auto;
       grid-template-areas:
-        "header header"
-        "aside main"
-        "footer footer";
+        "header header header header header header"
+        "aside main main main main evenement"
+        "footer footer footer footer footer footer";
     }
     .no-aside {
       grid-template-areas:
