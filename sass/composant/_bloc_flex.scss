@@ -94,33 +94,8 @@ article {
 }
 }
 
-
-// ******************* À mettre si on veut un carrousel
-
-// .blocflex{
-
-//   display: flex;
-//   overflow-x: scroll;
-//   padding: 24px;
-//   width: 70%;
-//   height: 50vh;
-//   scroll-padding: 24px;
-//   gap: 12px;
-//   margin: 2rem auto;
-//   border: 2px solid black;
-//   border-radius: 8px;
-  
-
-
-//   .enfant_machin{
-//     flex: 0 0 40%;
-//     padding: 2rem 2rem 4rem 2rem;
-//     font-size: 0.7rem;
-//     box-sizing: border-box;
-//     border-radius: 8px;
-//     scroll-snap-align: start;
-//     box-shadow: 5px 5px 10px;
-//   }
-
-
-// }
+.galerie{
+  img:hover{
+    outline: 2px solid rgb(255, 255, 255);
+  }
+}

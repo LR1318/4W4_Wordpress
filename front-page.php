@@ -11,25 +11,25 @@
         
         
         
-        <section class="section__galerie">
+        <!-- <section class="section__galerie">
             
             
             
             
-            <!-- <section class="enfant_machin"> -->
+            <section class="enfant_machin"> -->
                 
                 <?php   
-        $la_categorie = "4w4";
-        if(in_category('galerie')) {
-            $la_categorie= "galerie";
-        }
+        // $la_categorie = "4w4";
+        // if(in_category('galerie')) {
+        //     $la_categorie= "galerie";
+        // }
         
-        get_template_part('templates-parts/categorie', $la_categorie);
+        // get_template_part('templates-parts/categorie', $la_categorie);
         
         
         
         ?>
-        </section>
+        <!-- </section>  -->
         
         <section class="blocflex">
             <?php
