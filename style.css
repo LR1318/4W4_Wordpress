@@ -444,7 +444,6 @@ main {
 
 .page__single {
   border: 1px solid #070707;
-  box-shadow: 10px 10px 25px;
   padding: 1rem;
   border-radius: 15px;
   background-color: #a7a7a7;
@@ -480,6 +479,10 @@ article {
   padding: 1rem;
   border-radius: 15px;
   background-color: #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 article:hover {
   box-shadow: 10px 10px 2px;
@@ -504,12 +507,6 @@ article .blocflex__article {
 
 .site__footer {
   width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: 3rem;
-  flex-direction: column-reverse;
 }
 .site__footer .colonne1 {
   width: 100%;
@@ -812,6 +809,7 @@ article .blocflex__article {
 /*------------------------------------------layout */
 .site__entete {
   grid-area: header;
+  width: 100vw;
 }
 
 .site__main {
@@ -830,6 +828,7 @@ article .blocflex__article {
   grid-area: aside;
   border: 5px 15px solid black;
   background-color: rgb(97, 97, 97);
+  height: 100%;
 }
 .site__aside li {
   margin-bottom: 2rem;
@@ -844,7 +843,7 @@ article .blocflex__article {
 @media screen and (min-width: 1000px) {
   .site {
     grid-template-columns: 30% auto;
-    grid-template-areas: "header header header header header header" "aside main main main main evenement" "footer footer footer footer footer footer";
+    grid-template-areas: "header header header header header" "aside main main main main " "evenement main main main main " "footer footer footer footer footer";
   }
 }
 .site .no-aside {
@@ -853,6 +852,6 @@ article .blocflex__article {
 @media screen and (min-width: 1000px) {
   .site .no-aside {
     grid-template-columns: auto;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: "header header header header header header" "aside main main main main evenement" "footer footer footer footer footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

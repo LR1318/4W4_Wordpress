@@ -24,5 +24,16 @@
       wp_reset_postdata();?>
    </section>
 </main>
+<section class="blocflex__menu">
+    <h2>Evenement</h2>
+    <?php  
+        wp_nav_menu(array(
+            "menu"=>"evenement",
+            "container"=>"nav"
+        ));
+    
+    ?>
+    
+    </section>
 
 <?php get_footer(); ?>
