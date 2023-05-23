@@ -81,7 +81,17 @@ if (is_page_template('template-atelier.php')) {
 }
 
 ?>
-</div>
+<?php  
+$pages = get_pages(array(
+  'meta_key' => '_wp_page_template',
+  'meta_value' => 'template-atelier.php', 
+));
+
+
+  get_template_part('templates-parts/aside-atelier');
+
+        ?>
+        </div>
 </header>
 <div class="template__aside">
 

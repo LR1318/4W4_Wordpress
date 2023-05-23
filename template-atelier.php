@@ -8,6 +8,7 @@
  *  */    
  get_header(); ?>
 <main class="site__main">
+<?php the_post_thumbnail( 'thumbnail' );   ?> 
 <?php
 if ( have_posts() ) : the_post(); ?>
 <h1><?= get_the_title(); ?></h1>

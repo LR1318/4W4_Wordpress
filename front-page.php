@@ -30,7 +30,8 @@
         
         ?>
         <!-- </section>  -->
-        
+       
+           
         <section class="blocflex">
             <?php
         if (have_posts()): 
