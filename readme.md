@@ -1,9 +1,7 @@
-# Lab5 (2 points)
+# TP FINAL
 
-## L\'objectif du Lab5: Améliorer le footer avec les widget
+J'Ai pas réussi à integrer les image thumbnail et la nav exactement comme demander
 
-- J'ai créer des sidebar de widget qui sont dans le footer en flex direction comlumn-reverse
-- J'ai créer un footer de deux lignes 
 
 ## URL : https://cidweb19.sg-host.com/
 

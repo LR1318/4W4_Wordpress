@@ -5,7 +5,7 @@
        wp_nav_menu(array(
         "menu" => "atelier",        
         "container" => "nav",
-        the_post_thumbnail( 'thumbnail' )
+  
       )); 
       ?>
-</aside>
+</aside> 
